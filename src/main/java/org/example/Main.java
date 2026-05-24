@@ -1,6 +1,6 @@
 package org.example;
 // Задание 1
-public class Main {
+/*public class Main {
     public static void main(String[] args) {
         printThreeWords();
     }
@@ -9,8 +9,7 @@ public static void printThreeWords() {
         System.out.println("Banana");
         System.out.println("Apple");
     }
-}
-
+}*/
 // Задание 2
 /*public class Main {
     public static void main(String[] args) {
@@ -29,7 +28,7 @@ public static void checkSumSign() {
 }*/
 
 // Задание 3
-/*+public class Main {
+/*public class Main {
     public static void main(String[] args) {
         printColor();
     }
@@ -67,13 +66,11 @@ public static void checkSumSign() {
 //Задание 5
 /*public class Main {
     public static void main(String[] args) {
-        System.out.println(Sum10and20(5, 5));
-
+        System.out.println(sum10and20(5, 5));
     }
 
-    public static boolean Sum10and20(int a, int b) {
-        int sum = a + b;
-        return sum >= 10 && sum <= 20;
+    public static boolean sum10and20(int a, int b) {
+        return a + b >= 10 && a + b <= 20;
     }
 }*/
 
@@ -94,14 +91,12 @@ public static void checkSumSign() {
 //Задание 7
 /*public class Main {
     public static void main(String[] args) {
-        checkNumber(-5);
+        System.out.println(checkNumber(-5));
+        System.out.println(checkNumber(10));
+        System.out.println(checkNumber(0));
     }
-    public static void checkNumber(int number) {
-        if (number >= 0) {
-            System.out.println("Число положительное");
-        } else {
-            System.out.println("Число отрицательное");
-        }
+    public static boolean checkNumber(int number) {
+        return number >= 0;
     }
 }*/
 
@@ -180,8 +175,8 @@ public class Main {
 }*/
 
 //Задание 13
-//import java.util.Arrays;
-/*
+/*import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // Создаем квадратный массив 5x5
@@ -217,13 +212,14 @@ public class Main {
 }*/
 
 //Задание 14
-/*
 import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         int[] array1 = createArray(5, 10);
         System.out.println("Массив длиной 5, заполненный 10: " + Arrays.toString(array1));
     }
+
     public static int[] createArray(int len, int initialValue) {
         int[] array = new int[len];
         for (int i = 0; i < len; i++) {
@@ -231,5 +227,5 @@ public class Main {
         }
         return array;
     }
-}*/
+}
 
